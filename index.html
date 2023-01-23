@@ -5,28 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
+
     <header class="main-header">
-      <h1 >Интернет-магазин «Девайс» <img src="logo.jpg" alt="Логотип"/> </h1>
+      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+      <img src="logo.jpg" alt="Логотип"/>
+      <form class="header-search" action="#" method="get">
+        <input name="search" type="text" placeholder="Поиск по сайту">
+        <input name="search-button" type="submit" value="Найти">
+      </form>
+      <section class="header-buttons">
+        <ul class="header-button-list">
+          <li class="header-button">
+            <button name="login" type="button">Войти</button>
+          </li>
+          <li class="header-button">
+           <button name="comparison" type="button">Сравнение</button>
+          </li>
+          <li class="header-button">
+           <button name="cart" type="button">Корзина</button>
+          </li>
+        </ul>
+      </section>
+
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#product-categories"></a>Каталог товаров</a>
+           <a class="navigation-link" href="#product-categories">Каталог товаров</a>
           </li>
-          <li class="navigation-item"></li>
-          <li class="navigation-item"></li>
-
+          <li class="navigation-popup-button">
+           <button name="product-category-pop-up" type="button" value="Кнопка">+</button>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#delivery">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#warranty">Грантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#contacts">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="showcase">
-      </section>
-      <section class="product-categories">
-        <h2 id="product-categories">Категории товаров</h2>
+
+    <main class="main-index">
+
+      <section class="slider">
+        <h2 class="visually-hidden">Витрина</h2>
+
+        <ul class="slider-list">
+          <li class="slider-1">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <img src="img/copter.jpg" width="" height="" alt="Квадрокоптер">
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+
+          <div calss="slide-product-description">
+            <slogan class="slider-product-slogan">Порхает как бабочка,<br>
+              жалит как пчела!
+            </slogan>
+            <p class="slider-product-info">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+              мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <span class="slider-product-more-info">ПОДРОБНЕЕ</span>
+            <table class="slider-product-characteristics">
+              <tr>
+                <td>Дальность полёта</td>
+                <td>Радиус поражения</td>
+              </tr>
+              <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+              </tr>
+            </table>
+          </div>
+
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">Второй слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">Третий слайд</span>
+              </button>
+            </li>
+          </ol>
+          </li>
+        </ul>
+
+
+
 
       </section>
-      <section class="advantage-list">
+
+      <section class="product-categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="product-categories-list">
+          <li class="product-categories-list-item">
+
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="services-list">
+         <ul class="services-list-buttons">
+           <li class="services-list-button">
+            <h3 class="visually-hidden">Доставка</h3>
+            <button name="delivery" type="button">Доставка</button>
+           </li>
+           <li class="advantage-list-button">
+            <h3 class="visually-hidden">Гарантия</h3>
+            <button name="worranty" type="button">Грантия</button>
+           </li>
+           <li>
+            <h3 class="visually-hidden">Кредит</h3>
+            <button name="credit" type="button">Кредит</button>
+           </li>
+         </ul>
+        </div>
+        <div class="service-description">
+         <h2 class="visually-hidden">Описание услуг</h2>
+         <p>
+
+         </p>
+        </div>
 
       </section>
       <section class="special-delivery">
