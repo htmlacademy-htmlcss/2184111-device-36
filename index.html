@@ -13,7 +13,7 @@
         <img class="logo" src="logo.jpg" alt="Логотип" />
       </a>
       <div>
-        <form class="header-search" action="#" method="get">
+        <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="search-form">
             <span class="visually-hidden">Поле поиска</span>
           </label>
@@ -34,13 +34,13 @@
 
         <ul class="header-top-button-list">
           <li class="header-top-button-item">
-            <button class="header-top-button" type="button">Войти</button>
+            <a class="header-top-button" href="#">Войти</a>
           </li>
           <li class="header-top-button-item">
-            <button class="header-top-button" type="button">Сравнить</button>
+            <a class="header-top-button" href="#">Сравнить</a>
           </li>
           <li class="header-top-button-item">
-            <button class="header-top-button" type="button">Корзина</button>
+            <a class="header-top-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -71,7 +71,7 @@
             </button>
           </li>
         </ul>
-        <div calss="basket-row-wrapper">
+        <div class="basket-row-wrapper">
           <span class="basket-value-name">Товаров:</span>
           <span class="basket-amount">2</span>
           <span class="basket-value-name">Сумма:</span>
@@ -137,12 +137,12 @@
       <section class="slider">
         <h2 class="visually-hidden">Витрина</h2>
 
-        <a class="slider-button slider-prev" href="#">
+        <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
-        </a>
-        <a class="slider-button slider-next" href="#">
+        </button>
+        <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
-        </a>
+        </button>
 
         <ol class="slider-list">
           <li class="slider-item">
@@ -172,7 +172,7 @@
           </li>
 
 
-        <li class="slider-item">
+         <li class="slider-item">
           <img
             src="fitness-bracelet.jpg"
             width=""
@@ -198,9 +198,9 @@
               </tr>
             </table>
           </div>
-        </li>
+         </li>
 
-        <li class="slider-item">
+         <li class="slider-item">
           <img src="selfie-stick.jpg" width="" height="" alt="Сэлфи-палка" />
           <div class="slider-card">
             <span class="slider-number">03</span>
@@ -228,28 +228,28 @@
             </table>
           </div>
           </li>
+        </ol>
 
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
-              <a
+              <button
                 class="slider-pagination-button slider-pagination-button-current"
                 href="#">
                 <span class="visually-hidden">Первый слайд</span>
-              </a>
+              </button>
             </li>
             <li class="slider-pagination-item">
-              <a class="slider-pagination-button" href="#">
+              <button class="slider-pagination-button" href="#">
                 <span class="visually-hidden">Второй слайд</span>
-              </a>
+              </button>
             </li>
             <li class="slider-pagination-item">
-              <a class="slider-pagination-button" href="#">
+              <button class="slider-pagination-button" href="#">
                 <span class="visually-hidden">Третий слайд</span>
-              </a>
+              </button>
             </li>
           </ol>
-
-      </section>
+       </section>
 
       <section class="product-categories">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -287,15 +287,13 @@
 
         <ul class="services-button-list">
           <li class="services-button-item">
-            <a class="link-button services-button-current" type="button">
-              Доставка
-            </a>
+            <button class="link-button services-button-current" type="button"> Доставка</button>
           </li>
           <li class="services-button-item">
-            <a class="link-button services-button" type="button"> Грантия </a>
+            <button class="link-button services-button" type="button"> Грантия </button>
           </li>
           <li class="services-button-item">
-            <a class="link-button services-button" type="button"> Кредит </a>
+            <button class="link-button services-button" type="button"> Кредит </button>
           </li>
         </ul>
 
@@ -316,7 +314,6 @@
               Товар, не дом, конечно же.
             </p>
           </li>
-
           <li class="services-item">
             <h3 class="service-title" id="credit">Кредит</h3>
             <p class="description-text">
@@ -340,7 +337,7 @@
         <button class="special-delivery-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <form class="special-delivery-form" action="#" method="post">
+        <form class="special-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="special-delivery-name-container">
             <label class="special-delivery-lebel" for="special-delivery-name"
               >Ваше имя</label
@@ -387,6 +384,7 @@
               <span class="visually-hidden">Больше</span>
             </button>
           </div>
+          <input class="link-button" type="submit" value="отправить">
         </form>
       </dialog>
 
@@ -438,7 +436,7 @@
       </section>
 
       <section class="newsletter">
-        <h2 class="visually-hidden">Подписка</h2>
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <b class="newsletter-call"
           >Подпишитесь<br />
           на рассылку</b>
@@ -447,8 +445,8 @@
           длительными тест-драйвами, распаковками, а также акции,<br />
           спецпредложения и вот это вот всё.
         </p>
-        <form class="newsletter-form" action="#" method="post">
-          <label for="newsletter-field" class="visually-hidden">E-mail</label>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-field" class="visually-hidden"><span class="visually-hidden">E-mail</span></label>
           <input
             class="newsletter-field"
             name="newsletter-field"
@@ -457,7 +455,7 @@
             placeholder="Ваш e-mail"
             required/>
           <button class="button newsletter-submit-button" type="submit">
-            ПОДПИСАТЬСЯ
+            Подписаться
           </button>
         </form>
         <p class="description-text">Это бесплатно</p>
