@@ -8,8 +8,8 @@
 
   <body>
     <header class="main-header">
-      <a class="logo-link" href="https://htmlacademy.ru/">
-        <img class="header-logo" src="logo.jpg" alt="Логотип" />
+      <a class="logo-link" href="#">
+        <img class="logo" src="logo.jpg" alt="Логотип" />
       </a>
       <div>
         <form class="header-search" action="#" method="get">
@@ -22,13 +22,11 @@
             type="search"
             placeholder="Поиск по сайту"
             id="search-form"
-            required
-          />
+            required/>
           <button
             class="button header-search-button"
             type="submit"
-            value="Найти"
-          >
+            value="Найти">
             Найти
           </button>
         </form>
@@ -81,21 +79,18 @@
         <ul class="header-popup-list">
           <li class="header-popup-item">
             <a class="header-popup-link" href="catalog.html/"
-              >Виртуальная реальность</a
-            >
+              >Виртуальная реальность</a>
           </li>
           <li class="header-popup-item">
             <a class="header-popup-link" href="catalog.html/"
-              >Моноподы для селфи</a
-            >
+              >Моноподы для селфи</a>
           </li>
           <li class="header-popup-item">
             <a class="header-popup-link" href="catalog.html/">Экшен камеры</a>
           </li>
           <li class="header-popup-item">
             <a class="header-popup-link" href="catalog.html/"
-              >Фитнес-браслеты</a
-            >
+              >Фитнес-браслеты</a>
           </li>
           <li class="header-popup-item">
             <a class="header-popup-link" href="catalog.html/">Умные часы</a>
@@ -111,7 +106,7 @@
       <header class="inner-header">
         <h1 class="visually-hidden">Каталог</h1>
         <h2 class="inner-header-subtitle">Моноподы для селфи</h2>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -121,7 +116,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
-        </ul>
+        </ol>
       </header>
 
       <section class="catalog-filter">
@@ -142,8 +137,7 @@
                   type="checkbox"
                   name="color-black"
                   id="black"
-                  checked
-                />
+                  checked/>
                 <label for="black">Черный</label>
               </li>
               <li class="catalog-filter-item">
@@ -152,8 +146,7 @@
                   type="checkbox"
                   name="color-white"
                   id="white"
-                  checked
-                />
+                  checked/>
                 <label for="white">Белый</label>
               </li>
               <li class="catalog-filter-item">
@@ -162,8 +155,7 @@
                   type="checkbox"
                   name="color-blue"
                   id="blue"
-                  disabled
-                />
+                  disabled/>
                 <label for="blue">Синий</label>
               </li>
 
@@ -173,8 +165,7 @@
                   type="checkbox"
                   name="color-red"
                   id="red"
-                  disabled
-                />
+                  disabled/>
                 <label for="red">Красный</label>
               </li>
               <li class="catalog-filter-item">
@@ -183,8 +174,7 @@
                   type="checkbox"
                   name="color-pink"
                   id="pink"
-                  disabled
-                />
+                  disabled/>
                 <label for="pink">Розовый</label>
               </li>
             </ul>
@@ -199,8 +189,7 @@
                   type="radio"
                   name="radio-batton"
                   id="radio-yes"
-                  value="Yes-Bluetooth"
-                />
+                  value="Yes-Bluetooth"/>
                 <label for="radio-yes">Есть</label>
               </li>
               <li class="catalog-filter-item">
@@ -209,8 +198,7 @@
                   type="radio"
                   name="radio-batton"
                   id="radio-no"
-                  value="No-Bluetooth"
-                />
+                  value="No-Bluetooth"/>
                 <label for="radio-no">Нет</label>
               </li>
             </ul>
@@ -242,6 +230,7 @@
       </section>
 
       <section class="product-cards-area">
+        <h2 class="visually-hidden">Карточки товаров</h2>
         <ul class="product-card-list">
           <li class="product-card-item">
             <a class="product-card-link" href="product.html">
@@ -280,44 +269,38 @@
         </ul>
 
         <section class="product-cards-area-buttons">
+          <h3 class="visually-hidden">Выбор страницы с товарами</h3>
           <div>
-            <button class="product-cards-area-button wide-button" type="button">
+            <a class="product-cards-area-button wide-button" href="#">
               Загрузить еще
-            </button>
+            </a>
           </div>
-          <button
-            class="product-page-button side-button"
-            type="button"
-            disabled
-          >
+          <a class="product-page-button side-button" href="#" disabled>
             назад
-          </button>
+          </a>
           <ol class="pagination-list">
             <li class="pagination-item">
-              <button
+              <a
                 class="pagination-button pagination-button-current"
-                type="button"
-                disabled
-              >
+                href="#"
+                disabled>
                 1
-              </button>
+              </a>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button" type="button">2</button>
+              <a class="pagination-button" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button" type="button">3</button>
+              <a class="pagination-button" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button" type="button">...</button>
+              <a class="pagination-button" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button" type="button">15</button>
+              <a class="pagination-button" href="#">15</a>
             </li>
           </ol>
-          <button class="pagination-button side-button" type="button">
-            вперед
-          </button>
+          <a class="pagination-button side-button" href="#"> вперед </a>
         </section>
       </section>
     </main>
@@ -325,9 +308,9 @@
     <footer class="page-footer">
       <section class="footer-adress-left">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-logo-link" href="https://htmlacademy.ru/"
-          ><img class="header-logo" src="logo.jpg" alt="Логотип"
-        /></a>
+        <a class="logo-link" href="https://htmlacademy.ru/">
+          <img class="logo" src="logo.jpg" alt="Логотип"/>
+        </a>
         <p class="footer-adress-text">
           Санкт-Петербург, набережная<br />
           реки Карповки, 5, литера П.
@@ -339,13 +322,13 @@
           <h2 class="visually-hidden">Внутренние ссылки</h2>
           <ul class="footer-internal-link-list">
             <li class="footer-internal-link-item">
-              <a href="#delivery">Доставка</a>
+              <a href="index.html">Доставка</a>
             </li>
             <li class="footer-internal-link-item">
-              <a href="#warranty">Гарантия</a>
+              <a href="index.html">Гарантия</a>
             </li>
             <li class="footer-internal-link-item">
-              <a href="#contacts">Контакты</a>
+              <a href="index.html">Контакты</a>
             </li>
           </ul>
         </section>
@@ -361,8 +344,7 @@
             <li class="footer-social-item">
               <a
                 class="social-link"
-                href="https://www.youtube.com/user/htmlacademyru"
-              >
+                href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
