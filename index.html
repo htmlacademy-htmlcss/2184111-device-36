@@ -10,7 +10,7 @@
     <header class="main-header">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <a class="logo-link" href="#">
-        <img class="logo" src="logo.jpg" alt="Логотип" />
+        <img class="logo" src="images/header/logo.svg" width="145" height="36"  alt="Логотип"/>
       </a>
       <div>
         <form
@@ -39,11 +39,12 @@
             <a class="header-top-button" href="#">Войти</a>
           </li>
           <li class="header-top-button-item">
-            <a class="header-top-button" href="#">Сравнить</a>
+            <a class="header-top-button" href="#"><a class="header-top-button" href="#">Сравнить</a>
           </li>
           <li class="header-top-button-item">
-            <span class="basket-product-amount">2</span
-            ><a class="header-top-button" href="#">Корзина</a>
+            <span class="basket-product-amount">
+              2</span>
+              <a class="header-top-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -54,10 +55,9 @@
           <li class="basket-product-item">
             <a class="basket-link" href="#">
               <img
-                src="selfie-stick.jpg"
-                width=""
-                height=""
-                alt="любительская селфи палка"/>
+                src="images/catalog/selfie-stick-amateur.jpg"
+                width="39"
+                height="43"/>
               <h3 class="basket-product-title">Любительская селфи-палка</h3>
             </a>
 
@@ -68,9 +68,9 @@
           <li class="basket-product-item">
             <a class="basket-link" href="#">
               <img
-                src="selfie-stick-pro.jpg"
-                width=""
-                height=""
+                src="images/catalog/selfie-stick-pro.jpg"
+                width="39"
+                height="43"
                 alt="Профессиональная селфи палка"/>
               <h3 class="basket-product-title">Профессиональная селфи-палка</h3>
             </a>
@@ -112,7 +112,8 @@
                   >Фитнес-браслеты</a>
               </li>
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html">Умные часы</a>
+                <a class="header-popup-link" href="catalog.html">
+                  Умные часы</a>
               </li>
               <li class="header-popup-item">
                 <a class="header-popup-link" href="catalog.html"
@@ -151,7 +152,7 @@
 
         <ol class="slider-list">
           <li class="slider-item">
-            <img src="img/copter.jpg" width="" height="" alt="Квадрокоптер" />
+            <img class="slider-image" src="images\slider\copter.png" width="560" height="560" alt="Квадрокоптер"/>
             <div class="slider-card">
               <span class="slider-number">01</span>
               <h3 class="slider-title">
@@ -176,11 +177,7 @@
           </li>
 
           <li class="slider-item">
-            <img
-              src="fitness-bracelet.jpg"
-              width=""
-              height=""
-              alt="Фитнес браслет"/>
+            <img class="slider-image" src="images\slider\fitness-braclet.png" width="560" height="560" alt="Фитнес-браслет"/>
             <div class="slider-card">
               <span class="slider-number">02</span>
               <h3 class="slider-card-title">Худеем правильно!</h3>
@@ -199,7 +196,7 @@
           </li>
 
           <li class="slider-item">
-            <img src="selfie-stick.jpg" width="" height="" alt="Сэлфи-палка" />
+            <img class="slider-image" src="images\slider\selfie-stick.png" width="560" height="560" alt="Селфи-палка"/>
             <div class="slider-card">
               <span class="slider-number">03</span>
               <h3 class="slider-card-title">Делай селфи как Бэн Стиллер!</h3>
@@ -251,25 +248,33 @@
 
         <ul class="product-categories-list">
           <li class="product-categories-item">
-            <a class="product-categories-link" href="catalog.html">Виртуальная реальность</a>
+            <a class="product-categories-link" href="catalog.html">
+              Виртуальная реальность</a>
           </li>
           <li class="product-categories-item">
-            <a class="product-categories-link" href="catalog.html">Моноподы для селфи</a>
+            <a class="product-categories-link" href="catalog.html">
+            Моноподы для селфи</a>
           </li>
           <li class="product-categories-item">
-            <a class="product-categories-link" href="catalog.html">Экшен камеры</a>
+            <a class="product-categories-link" href="catalog.html">
+              Экшен камеры</a>
           </li>
           <li class="product-categories-item">
-            <a class="product-categories-link" href="catalog.html">Фитнес-браслеты</a>
+            <a class="product-categories-link" href="catalog.html">
+              Фитнес-браслеты</a>
           </li>
           <li class="product-categories-item">
-            <a class="product-categories-link" href="catalog.html">Умные часы</a>
+            <a class="product-categories-link" href="catalog.html">
+              Умные часы</a>
           </li>
           <li class="product-categories-item">
-            <a class="product-categories-link" href="catalog.html">Квадрокоптеры</a>
+            <a class="product-categories-link" href="catalog.html">
+              Квадрокоптеры</a>
           </li>
         </ul>
       </section>
+
+
 
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
@@ -321,7 +326,9 @@
 
       <section class="special-delivery">
         <h2 class="visually-hidden">Специальная доставка</h2>
-        <a class="button special-delivery-button" href="#">Доставим редкий товар под заказ</a>
+        <a class="button special-delivery-button" href="#">
+          Доставим редкий товар под заказ
+        </a>
       </section>
 
       <dialog class="special-delivery-modal-window" open>
@@ -448,7 +455,9 @@
             Подписаться
           </button>
         </form>
+        <div>
         <p class="description-text">Это бесплатно</p>
+        </div>
       </section>
     </main>
 
@@ -456,7 +465,7 @@
       <section class="footer-address-left">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="logo-link" href="#">
-          <img class="logo" src="logo.jpg" alt="Логотип" />
+          <img class="logo" src="images\footer\logo.svg" width="145" height="36" alt="Логотип"/>
         </a>
         <p class="footer-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -514,7 +523,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12 </a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <p>.htmlacademy</p>
+          <img class="site-creator-icon" src="images\footer\html-academy.svg" width="114" height="33" alt=""/>
         </a>
       </section>
     </footer>
