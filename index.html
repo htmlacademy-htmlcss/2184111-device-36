@@ -42,49 +42,49 @@
             <a class="header-top-button" href="#"><a class="header-top-button" href="#">Сравнить</a>
           </li>
           <li class="header-top-button-item">
-            <span class="card-product-amount">2</span>
+            <span class="cart-product-amount">2</span>
               <a class="header-top-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
 
-      <section class="card-popover">
+      <section class="cart-popover">
         <h2 class="visually-hidden">Содержимое корзины</h2>
-        <ul class="card-product-list">
-          <li class="card-product-item">
-            <a class="card-link" href="#">
+        <ul class="cart-product-list">
+          <li class="cart-product-item">
+            <a class="cart-link" href="#">
               <img
                 src="images/catalog/selfie-stick-amateur.jpg"
                 width="39"
                 height="43"/>
-              <h3 class="card-product-title">Любительская селфи-палка</h3>
+              <h3 class="cart-product-title">Любительская селфи-палка</h3>
             </a>
 
-            <button class="card-product-delete">
+            <button class="cart-product-delete" type="button">
               <span class="visually-hidden">Удалить товар</span>
             </button>
           </li>
-          <li class="card-product-item">
-            <a class="card-link" href="#">
+          <li class="cart-product-item">
+            <a class="cart-link" href="#">
               <img
                 src="images/catalog/selfie-stick-pro.jpg"
                 width="39"
                 height="43"
                 alt="Профессиональная селфи палка"/>
-              <h3 class="card-product-title">Профессиональная селфи-палка</h3>
+              <h3 class="cart-product-title">Профессиональная селфи-палка</h3>
             </a>
-            <button class="card-product-delete">
+            <button class="cart-product-delete" type="button">
               <span class="visually-hidden">Удалить товар</span>
             </button>
           </li>
         </ul>
-        <div class="card-row-wrapper">
-          <span class="card-value-name">Товаров:</span>
-          <span class="card-amount">2</span>
-          <span class="card-value-name">Сумма:</span>
-          <span class="card-amount">2000 ₽</span>
+        <div class="cart-row-wrapper">
+          <span class="cart-value-name">Товаров:</span>
+          <span class="cart-amount">2</span>
+          <span class="cart-value-name">Сумма:</span>
+          <span class="cart-amount">2000 ₽</span>
         </div>
-        <a class="card-open-link" href="#">Открыть корзину</a>
+        <a class="cart-open-link" href="#">Открыть корзину</a>
       </section>
 
       <div>
@@ -225,17 +225,17 @@
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button
-              class="slider-pagination-button slider-pagination-button-current">
+              class="slider-pagination-button slider-pagination-button-current" type="button">
               <span class="visually-hidden">Первый слайд</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button">
+            <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">Второй слайд</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button">
+            <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">Третий слайд</span>
             </button>
           </li>
@@ -343,7 +343,7 @@
             <label class="special-delivery-lebel" for="special-delivery-name"
               >Ваше имя:</label>
             <input
-              class="pacial-delivery-input"
+              class="special-delivery-input"
               name="special-delivery-name"
               id="special-delivery-name"
               type="text"
@@ -352,11 +352,11 @@
             <span class="special-deliery-hint">Добавьте имя</span>
           </p>
           <p class="special-delivery-email-container">
-            <label class="special-delivery-lebel" for="spacial-delivery-email">Ваш e-mail:</label>
+            <label class="special-delivery-lebel" for="special-delivery-email">Ваш e-mail:</label>
             <input
-              class="spacial-delivery-input"
-              name="spacial-delivery-email"
-              id="spacial-delivery-email"
+              class="special-delivery-input input-added"
+              name="special-delivery-email"
+              id="special-delivery-email"
               type="email"
               placeholder="почта"/>
 
@@ -364,11 +364,11 @@
               >Забавный у вас адрес</span>
           </p>
           <p class="special-delivery-product-container">
-            <label class="special-delivery-lebel" for="spacial-delivery-product">Что нужно привезти:</label>
+            <label class="special-delivery-lebel" for="special-delivery-product">Что нужно привезти:</label>
             <input
-              class="spacial-delivery-input"
-              name="spacial-delivery-product"
-              id="spacial-delivery-product"
+              class="special-delivery-input"
+              name="special-delivery-product"
+              id="special-delivery-product"
               type="text"
               placeholder="В свободной форме"/>
           </p>
