@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
 
@@ -24,8 +25,7 @@
             type="search"
             placeholder="Поиск по сайту"
             id="search-form"
-            required
-          />
+            required/>
           <button
             class="button header-search-button"
             type="submit"
@@ -42,50 +42,49 @@
             <a class="header-top-button" href="#"><a class="header-top-button" href="#">Сравнить</a>
           </li>
           <li class="header-top-button-item">
-            <span class="basket-product-amount">
-              2</span>
+            <span class="cart-product-amount">2</span>
               <a class="header-top-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
 
-      <section class="basket-popover">
+      <section class="cart-popover">
         <h2 class="visually-hidden">Содержимое корзины</h2>
-        <ul class="basket-product-list">
-          <li class="basket-product-item">
-            <a class="basket-link" href="#">
+        <ul class="cart-product-list">
+          <li class="cart-product-item">
+            <a class="cart-link" href="#">
               <img
                 src="images/catalog/selfie-stick-amateur.jpg"
                 width="39"
                 height="43"/>
-              <h3 class="basket-product-title">Любительская селфи-палка</h3>
+              <h3 class="cart-product-title">Любительская селфи-палка</h3>
             </a>
 
-            <button class="basket-product-delete">
+            <button class="cart-product-delete" type="button">
               <span class="visually-hidden">Удалить товар</span>
             </button>
           </li>
-          <li class="basket-product-item">
-            <a class="basket-link" href="#">
+          <li class="cart-product-item">
+            <a class="cart-link" href="#">
               <img
                 src="images/catalog/selfie-stick-pro.jpg"
                 width="39"
                 height="43"
                 alt="Профессиональная селфи палка"/>
-              <h3 class="basket-product-title">Профессиональная селфи-палка</h3>
+              <h3 class="cart-product-title">Профессиональная селфи-палка</h3>
             </a>
-            <button class="basket-product-delete">
+            <button class="cart-product-delete" type="button">
               <span class="visually-hidden">Удалить товар</span>
             </button>
           </li>
         </ul>
-        <div class="basket-row-wrapper">
-          <span class="basket-value-name">Товаров:</span>
-          <span class="basket-amount">2</span>
-          <span class="basket-value-name">Сумма:</span>
-          <span class="basket-amount">2000 ₽</span>
+        <div class="cart-row-wrapper">
+          <span class="cart-value-name">Товаров:</span>
+          <span class="cart-amount">2</span>
+          <span class="cart-value-name">Сумма:</span>
+          <span class="cart-amount">2000 ₽</span>
         </div>
-        <a class="basket-open-link">Открыть корзину</a>
+        <a class="cart-open-link" href="#">Открыть корзину</a>
       </section>
 
       <div>
@@ -139,7 +138,7 @@
       </div>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
       <section class="slider">
         <h2 class="visually-hidden">Витрина</h2>
 
@@ -180,7 +179,7 @@
             <img class="slider-image" src="images\slider\fitness-braclet.png" width="560" height="560" alt="Фитнес-браслет"/>
             <div class="slider-card">
               <span class="slider-number">02</span>
-              <h3 class="slider-card-title">Худеем правильно!</h3>
+              <h3 class="slider-title">Худеем правильно!</h3>
               <p class="slider-card-text">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не
                 пропускать занятия и соблюдать диету.
@@ -199,7 +198,7 @@
             <img class="slider-image" src="images\slider\selfie-stick.png" width="560" height="560" alt="Селфи-палка"/>
             <div class="slider-card">
               <span class="slider-number">03</span>
-              <h3 class="slider-card-title">Делай селфи как Бэн Стиллер!</h3>
+              <h3 class="slider-title">Делай селфи как Бэн Стиллер!</h3>
               <p class="slider-card-text">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь
                 (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -207,7 +206,7 @@
               <a class="link-button" href="catalog.html">ПОДРОБНЕЕ</a>
               <div class="slider-card-characteristics">
                 <div class="slider-card-characteristics-container">
-                  <b class="slider-value-item">8.5 метров</b>
+                  <b class="slider-value-item">8.5 м</b>
                   <span class="slider-value-name">Длина палки</span>
                 </div>
                 <div class="slider-card-characteristics-container">
@@ -226,17 +225,17 @@
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button
-              class="slider-pagination-button slider-pagination-button-current">
+              class="slider-pagination-button slider-pagination-button-current" type="button">
               <span class="visually-hidden">Первый слайд</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button">
+            <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">Второй слайд</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button">
+            <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">Третий слайд</span>
             </button>
           </li>
@@ -342,9 +341,9 @@
           method="post">
           <p class="special-delivery-name-container">
             <label class="special-delivery-lebel" for="special-delivery-name"
-              >Ваше имя</label>
+              >Ваше имя:</label>
             <input
-              class="special-delivery-name"
+              class="special-delivery-input"
               name="special-delivery-name"
               id="special-delivery-name"
               type="text"
@@ -353,11 +352,11 @@
             <span class="special-deliery-hint">Добавьте имя</span>
           </p>
           <p class="special-delivery-email-container">
-            <label for="spacial-delivery-email">Ваш e-mail</label>
+            <label class="special-delivery-lebel" for="special-delivery-email">Ваш e-mail:</label>
             <input
-              class="spacial-delivery-email"
-              name="spacial-delivery-email"
-              id="spacial-delivery-email"
+              class="special-delivery-input input-added"
+              name="special-delivery-email"
+              id="special-delivery-email"
               type="email"
               placeholder="почта"/>
 
@@ -365,16 +364,16 @@
               >Забавный у вас адрес</span>
           </p>
           <p class="special-delivery-product-container">
-            <label for="spacial-delivery-product">Что нужно привезти:</label>
+            <label class="special-delivery-lebel" for="special-delivery-product">Что нужно привезти:</label>
             <input
-              class="spacial-delivery-product"
-              name="spacial-delivery-product"
-              id="spacial-delivery-product"
+              class="special-delivery-input"
+              name="special-delivery-product"
+              id="special-delivery-product"
               type="text"
               placeholder="В свободной форме"/>
           </p>
           <div>
-            <span>Количество:</span>
+            <span class="special-delivery-lebel">Количество:</span>
             <button class="minus-button" type="button">
               <span class="visually-hidden">Меньше</span>
             </button>
@@ -387,8 +386,9 @@
         </form>
       </dialog>
 
+      <div class="column-wrapper">
       <section class="company-info">
-        <h2 class="company-info-title">О нас</h2>
+        <h2 class="contacts-title">О нас</h2>
         <p class="description-text">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас.
@@ -431,6 +431,7 @@
 
         <button class="link-button" type="button">Напишите нам</button>
       </section>
+      </div>
 
       <section class="newsletter">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -467,12 +468,13 @@
         <a class="logo-link" href="#">
           <img class="logo" src="images\footer\logo.svg" width="145" height="36" alt="Логотип"/>
         </a>
-        <p class="footer-address-text">
+        <address class="footer-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </p>
+        </address>
       </section>
 
       <div class="footer-center-wrapper">
+
         <section class="footer-internal-links">
           <h2 class="visually-hidden">Внутренние ссылки</h2>
           <ul class="footer-internal-link-list">
@@ -521,7 +523,7 @@
 
       <section class="footer-address-right">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12 </a>
+        <a class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12 </a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="site-creator-icon" src="images\footer\html-academy.svg" width="114" height="33" alt=""/>
         </a>
