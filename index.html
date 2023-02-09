@@ -9,12 +9,12 @@
 
   <body>
     <header class="main-header">
-      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+      <!-- для абсолютного позиционирования <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <a class="logo-link" href="#">
         <img class="logo" src="images/header/logo.svg" width="145" height="36"  alt="Логотип"/>
-      </a>
-      <div>
-        <form
+      </a> -->
+      <div class="header-row-wrapper">
+         <form
           class="header-search"
           action="https://echo.htmlacademy.ru/"
           method="get">
@@ -32,12 +32,15 @@
             value="Найти">
             Найти
           </button>
-        </form>
+         </form>
 
-        <ul class="header-top-button-list">
+
+        <ul class="header-top-login-list">
           <li class="header-top-button-item">
             <a class="header-top-button" href="#">Войти</a>
           </li>
+        </ul>
+        <ul class="header-top-button-list">
           <li class="header-top-button-item">
             <a class="header-top-button" href="#"><a class="header-top-button" href="#">Сравнить</a>
           </li>
@@ -48,18 +51,18 @@
         </ul>
       </div>
 
-      <section class="cart-popover">
+      <!-- скрыл корзину для абсолютного позиционирования <section class="cart-popover">
         <h2 class="visually-hidden">Содержимое корзины</h2>
         <ul class="cart-product-list">
           <li class="cart-product-item">
             <a class="cart-link" href="#">
               <img
+                class="cart-img"
                 src="images/catalog/selfie-stick-amateur.jpg"
                 width="39"
                 height="43"/>
               <h3 class="cart-product-title">Любительская селфи-палка</h3>
             </a>
-
             <button class="cart-product-delete" type="button">
               <span class="visually-hidden">Удалить товар</span>
             </button>
@@ -67,6 +70,7 @@
           <li class="cart-product-item">
             <a class="cart-link" href="#">
               <img
+                class="cart-img"
                 src="images/catalog/selfie-stick-pro.jpg"
                 width="39"
                 height="43"
@@ -79,21 +83,26 @@
           </li>
         </ul>
         <div class="cart-row-wrapper">
-          <span class="cart-value-name">Товаров:</span>
-          <span class="cart-amount">2</span>
-          <span class="cart-value-name">Сумма:</span>
-          <span class="cart-amount">2000 ₽</span>
+          <div>
+             <span class="cart-value-name">Товаров:</span>
+             <span class="cart-amount">2</span>
+          </div>
+          <div>
+            <span class="cart-value-name">Сумма:</span>
+            <span class="cart-amount">2000 ₽</span>
+          </div>
         </div>
         <a class="cart-open-link" href="#">Открыть корзину</a>
-      </section>
+      </section> -->
 
-      <div>
-        <div>
+
+        <div class="catalog-navigation-wrapper">
           <div class="header-catalog-buttons">
             <button class="button header-catalog-button" type="button">
-              Кнопка раскрытия каталога
+              Каталог товаров
             </button>
-            <ul class="header-popup-list">
+
+            <!--скрыл выпадающий список для абсолютного позиционирования <ul class="header-popup-list">
               <li class="header-popup-item">
                 <a class="header-popup-link" href="catalog.html"
                   >Виртуальная реальность</a>
@@ -118,7 +127,8 @@
                 <a class="header-popup-link" href="catalog.html"
                   >Квадрокоптеры</a>
               </li>
-            </ul>
+            </ul> -->
+
           </div>
 
           <nav class="navigation">
@@ -135,25 +145,25 @@
             </ul>
           </nav>
         </div>
-      </div>
     </header>
 
     <main class="main-container main-index">
+      <div class="page-container">
       <section class="slider">
         <h2 class="visually-hidden">Витрина</h2>
-
-        <button class="slider-button slider-prev" type="button">
+<!--
+        <button class="slider-button--prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
         </button>
-        <button class="slider-button slider-next" type="button">
+        <button class="slider-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
-        </button>
+        </button> -->
 
         <ol class="slider-list">
           <li class="slider-item">
             <img class="slider-image" src="images\slider\copter.png" width="560" height="560" alt="Квадрокоптер"/>
             <div class="slider-card">
-              <span class="slider-number">01</span>
+              <!-- <span class="slider-number">01</span> -->
               <h3 class="slider-title">
                 Порхает как бабочка, жалит как пчела!
               </h3>
@@ -178,7 +188,7 @@
           <li class="slider-item">
             <img class="slider-image" src="images\slider\fitness-braclet.png" width="560" height="560" alt="Фитнес-браслет"/>
             <div class="slider-card">
-              <span class="slider-number">02</span>
+              <!-- <span class="slider-number">02</span> -->
               <h3 class="slider-title">Худеем правильно!</h3>
               <p class="slider-card-text">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не
@@ -197,7 +207,7 @@
           <li class="slider-item">
             <img class="slider-image" src="images\slider\selfie-stick.png" width="560" height="560" alt="Селфи-палка"/>
             <div class="slider-card">
-              <span class="slider-number">03</span>
+              <!-- <span class="slider-number">03</span> -->
               <h3 class="slider-title">Делай селфи как Бэн Стиллер!</h3>
               <p class="slider-card-text">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь
@@ -276,8 +286,8 @@
 
 
       <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
 
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-button-list">
           <li class="services-button-item">
             <button class="link-button services-button-current" type="button">
@@ -295,6 +305,7 @@
             </button>
           </li>
         </ul>
+
 
         <ul class="services-list">
           <li class="services-item">
@@ -325,12 +336,12 @@
 
       <section class="special-delivery">
         <h2 class="visually-hidden">Специальная доставка</h2>
-        <a class="button special-delivery-button" href="#">
+        <a class="special-delivery-button" href="#">
           Доставим редкий товар под заказ
         </a>
       </section>
 
-      <dialog class="special-delivery-modal-window" open>
+      <!-- <dialog class="special-delivery-modal-window" open>
         <h2 class="special-delivery-title">Доставка под заказ</h2>
         <button class="special-delivery-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -377,16 +388,16 @@
             <button class="minus-button" type="button">
               <span class="visually-hidden">Меньше</span>
             </button>
-            <input type="number" name="amount-of-product" value="1"/>
+            <input class="amount-of-product" type="number" name="amount-of-product" value="1"/>
             <button class="plus-button" type="button">
               <span class="visually-hidden">Больше</span>
             </button>
           </div>
           <input class="link-button" type="submit" value="отправить"/>
         </form>
-      </dialog>
+      </dialog> -->
 
-      <div class="column-wrapper">
+      <div class="column-section-wrapper">
       <section class="company-info">
         <h2 class="contacts-title">О нас</h2>
         <p class="description-text">
@@ -434,12 +445,16 @@
       </div>
 
       <section class="newsletter">
+
+        <div class="subscription-row-wrapper">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <b class="newsletter-call">Подпишитесь на рассылку</b>
-        <p class="description-text">
+        <p class="description-text description-text-subscription">
           Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
+        </div>
+        <div class="subscription-row-wrapper-bottom">
         <form
           class="newsletter-form"
           action="https://echo.htmlacademy.ru/"
@@ -456,17 +471,17 @@
             Подписаться
           </button>
         </form>
-        <div>
         <p class="description-text">Это бесплатно</p>
         </div>
       </section>
+    </div>
     </main>
 
     <footer class="page-footer">
       <section class="footer-address-left">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="logo-link" href="#">
-          <img class="logo" src="images\footer\logo.svg" width="145" height="36" alt="Логотип"/>
+        <a class="logo-link-footer" href="#">
+          <!-- <img class="logo-footer" src="images\footer\logo.svg" width="145" height="36" alt="Логотип"/> -->
         </a>
         <address class="footer-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.

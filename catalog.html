@@ -9,11 +9,12 @@
 
   <body>
     <header class="main-header">
-      <a class="logo-link" href="index.html">
+      <!-- для абсолютного позиционирования <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+      <a class="logo-link" href="#">
         <img class="logo" src="images/header/logo.svg" width="145" height="36"  alt="Логотип"/>
-      </a>
-      <div>
-        <form
+      </a> -->
+      <div class="header-row-wrapper">
+         <form
           class="header-search"
           action="https://echo.htmlacademy.ru/"
           method="get">
@@ -31,51 +32,52 @@
             value="Найти">
             Найти
           </button>
-        </form>
+         </form>
 
+
+        <ul class="header-top-login-list">
+          <li class="header-top-button-item">
+            <a class="header-top-button" href="#">Коля Петухов</a>
+          </li>
+          <li class="header-top-button-item">
+            <span class="header-top-button log-out" href="#">Выйти</span>
+          </li>
+        </ul>
         <ul class="header-top-button-list">
           <li class="header-top-button-item">
-            <a class="header-top-button" href="#">
-              <span class="username">Коля Петухов</span>
-            </a>
+            <a class="header-top-button" href="#"><a class="header-top-button" href="#">Сравнить</a>
           </li>
           <li class="header-top-button-item">
-            <a class="header-top-button header-top-disabled" href="#">
-              Выйти
-            </a>
-          </li>
-          <li class="header-top-button-item">
-            <a class="header-top-button" href="#">Сравнить</a>
-          </li>
-          <li class="header-top-button-item">
-            <a class="header-top-button" href="#"
-              ><span class="cart-product-amount">2</span>Корзина</a>
+            <span class="cart-product-amount">2</span>
+              <a class="header-top-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
 
-      <section class="cart-popover">
+      <!-- скрыл корзину для абсолютного позиционирования <section class="cart-popover">
         <h2 class="visually-hidden">Содержимое корзины</h2>
         <ul class="cart-product-list">
           <li class="cart-product-item">
             <a class="cart-link" href="#">
               <img
-              src="images/catalog/selfie-stick-amateur.jpg"
-              width="39"
-              height="43"/>
+                class="cart-img"
+                src="images/catalog/selfie-stick-amateur.jpg"
+                width="39"
+                height="43"/>
               <h3 class="cart-product-title">Любительская селфи-палка</h3>
             </a>
-
-            <button class="cart-product-delete">
+            <button class="cart-product-delete" type="button">
               <span class="visually-hidden">Удалить товар</span>
             </button>
           </li>
           <li class="cart-product-item">
             <a class="cart-link" href="#">
               <img
-              src="images/catalog/selfie-stick-pro.jpg"
-              width="39"
-              height="43"/>
+                class="cart-img"
+                src="images/catalog/selfie-stick-pro.jpg"
+                width="39"
+                height="43"
+                alt="Профессиональная селфи палка"/>
               <h3 class="cart-product-title">Профессиональная селфи-палка</h3>
             </a>
             <button class="cart-product-delete" type="button">
@@ -83,47 +85,53 @@
             </button>
           </li>
         </ul>
-
         <div class="cart-row-wrapper">
-          <span class="cart-value-name">Товаров:</span>
-          <span class="cart-amount">2</span>
-          <span class="cart-value-name">Сумма:</span>
-          <span class="cart-amount">2000 ₽</span>
+          <div>
+             <span class="cart-value-name">Товаров:</span>
+             <span class="cart-amount">2</span>
+          </div>
+          <div>
+            <span class="cart-value-name">Сумма:</span>
+            <span class="cart-amount">2000 ₽</span>
+          </div>
         </div>
-        <a class="cart-open-link">Открыть корзину</a>
-      </section>
+        <a class="cart-open-link" href="#">Открыть корзину</a>
+      </section> -->
 
-      <div>
-        <div>
+
+        <div class="catalog-navigation-wrapper">
           <div class="header-catalog-buttons">
             <button class="button header-catalog-button" type="button">
-              Кнопка раскрытия каталога
+              Каталог товаров
             </button>
-            <ul class="header-popup-list">
+
+            <!--скрыл выпадающий список для абсолютного позиционирования <ul class="header-popup-list">
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html/"
+                <a class="header-popup-link" href="catalog.html"
                   >Виртуальная реальность</a>
               </li>
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html/"
+                <a class="header-popup-link" href="catalog.html"
                   >Моноподы для селфи</a>
               </li>
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html/"
+                <a class="header-popup-link" href="catalog.html"
                   >Экшен камеры</a>
               </li>
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html/"
+                <a class="header-popup-link" href="catalog.html"
                   >Фитнес-браслеты</a>
               </li>
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html/">Умные часы</a>
+                <a class="header-popup-link" href="catalog.html">
+                  Умные часы</a>
               </li>
               <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html/"
+                <a class="header-popup-link" href="catalog.html"
                   >Квадрокоптеры</a>
               </li>
-            </ul>
+            </ul> -->
+
           </div>
 
           <nav class="navigation">
@@ -140,7 +148,6 @@
             </ul>
           </nav>
         </div>
-      </div>
     </header>
 
     <main class="main-container main-inner">
@@ -159,6 +166,8 @@
         </ol>
       </header>
 
+
+    <div class="catalog-row-wrapper">
       <section class="catalog-filter">
         <h2 class="catalog-subtitle">Фильтр:</h2>
         <form
@@ -166,11 +175,11 @@
           action="https://echo.htmlacademy.ru/"
           method="get">
 
-          <!--to be continued-->
+          <!--to be continued
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
           </fieldset>
-          <!--to be continued-->
+          -->
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -252,6 +261,7 @@
         </form>
       </section>
 
+      <div class="catalog-column-wrapper">
       <section class="product-sorting">
         <h2 class="catalog-subtitle">Сортировка:</h2>
         <select class="select-control" aria-label="Сортировка">
@@ -338,37 +348,40 @@
           <a class="pagination-button side-button" href="#"> вперёд </a>
         </section>
       </section>
+      </div>
+    </div>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-adress-left">
+      <section class="footer-address-left">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="logo-link" href="index.html">
-          <img class="logo" src="images/footer/logo.svg" width="145" height="36" alt="Логотип"/>
+        <a class="logo-link-footer" href="#">
+          <!-- <img class="logo-footer" src="images\footer\logo.svg" width="145" height="36" alt="Логотип"/> -->
         </a>
-        <p class="footer-address-text">
+        <address class="footer-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </p>
+        </address>
       </section>
 
       <div class="footer-center-wrapper">
+
         <section class="footer-internal-links">
           <h2 class="visually-hidden">Внутренние ссылки</h2>
           <ul class="footer-internal-link-list">
             <li class="footer-internal-link-item">
-              <a class="footer-internal-link" href="index.html">Доставка</a>
+              <a class="footer-internal-link" href="#delivery">Доставка</a>
             </li>
             <li class="footer-internal-link-item">
-              <a class="footer-internal-link" href="index.html">Гарантия</a>
+              <a class="footer-internal-link" href="#warranty">Гарантия</a>
             </li>
             <li class="footer-internal-link-item">
-              <a class="footer-internal-link" href="index.html">Контакты</a>
+              <a class="footer-internal-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </section>
 
         <section class="footer-social">
-          <h2 class="visually-hidden">Ссылки на соцсети</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a
@@ -398,7 +411,7 @@
         </section>
       </div>
 
-      <section class="footer-adress-right">
+      <section class="footer-address-right">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12 </a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
