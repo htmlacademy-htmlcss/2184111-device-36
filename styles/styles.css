@@ -34,11 +34,12 @@ body {
   min-height: 100%;
   margin: 0 auto;
   max-width: 1440px;
-  padding: 40px 140px;
+  padding-top: 40px;
 }
 
 .main-container {
   flex-grow: 1;
+  padding: 0 140px;
 }
 
 .header-search-button {
@@ -54,11 +55,9 @@ body {
   color: inherit;
 }
 
-/* так лучше не делать в крупных проектах
-.main-header a {
-  text-decoration: none;
-  color: inherit;
-}*/
+.main-header {
+  padding: 0 140px;
+}
 
 .cart-link {
   text-decoration: none;
@@ -310,6 +309,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0 140px;
+}
+
+.htmlacademy-link {
+  display: block;
+  margin-top: 63px;
 }
 
 .breadcrumbs-link {
@@ -734,7 +739,8 @@ body {
 .footer-center-wrapper {
   display: flex;
   flex-direction: column;
-  width: 444px;
+  /* width: 444px; */
+  padding-top: 140px;
 }
 
 .footer-social {
@@ -745,8 +751,7 @@ body {
 .footer-address-right {
   display: flex;
   flex-direction: column;
-  width: 175px;
-  height: 116px;
+  padding-top: 164px;
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -755,6 +760,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin: 0;
 }
 
 .footer-social-list {
