@@ -24,22 +24,31 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   background-color: #ffffff;
+  min-height: 100%;
+  margin: 0;
+}
+
+.max-width {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   margin: 0 auto;
-  max-width: 1440px;
-  padding-top: 40px;
+}
+
+.restricted-width {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .main-container {
   flex-grow: 1;
-  padding: 0 140px;
 }
 
 .header-search-button {
@@ -53,10 +62,6 @@ body {
 .header-top-button {
   text-decoration: none;
   color: inherit;
-}
-
-.main-header {
-  padding: 0 140px;
 }
 
 .cart-link {
@@ -74,13 +79,14 @@ body {
 
 .header-catalog-button {
   color: inherit;
-  font-family: "Raleway";
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 293px;
 }
 
 .cart-row-wrapper {
@@ -129,6 +135,8 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-card-text {
@@ -137,7 +145,7 @@ body {
 
 .link-button {
   color: inherit;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -159,7 +167,7 @@ body {
 }
 
 .product-categories-link {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.02em;
@@ -200,7 +208,7 @@ body {
 }
 
 .special-delivery-title {
-  font-family: "Raleway";
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -281,11 +289,13 @@ body {
 }
 
 .footer-address-text {
+  font-family: Rubik, sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #444444;
+  width: 239px;
 }
 
 .description-text {
@@ -306,10 +316,6 @@ body {
 
 .page-footer {
   background-color: #444444;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0 140px;
 }
 
 .htmlacademy-link {
@@ -414,7 +420,7 @@ body {
 }
 
 .pagination-button {
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik, sans-serif;
   background-color: #ebebeb;
   font-size: 16px;
   line-height: 20px;
@@ -438,7 +444,7 @@ body {
 }
 
 .pagination-button-current {
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik, sans-serif;
   background-color: #ebebeb;
   font-size: 16px;
   line-height: 20px;
@@ -531,11 +537,6 @@ body {
   justify-content: space-between;
 }
 
-.header-catalog-button {
-  display: flex;
-  width: 293px;
-}
-
 /*Блок с поповером корзины*/
 
 .cart-product-list {
@@ -582,15 +583,32 @@ body {
 
 .slider-card {
   width: 560px;
+  padding-top: 120px;
+}
+
+.slider-card-characteristics {
+  display: flex;
+  gap: 20px;
+}
+
+.slider-card-characteristics-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-pagination {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 /*Блок с категориями товаров*/
+
+.product-categories {
+  margin-bottom: 70px;
+}
 
 .product-categories-list {
   margin: 0;
@@ -608,8 +626,8 @@ body {
 
 .services {
   display: flex;
-  margin-top: 70px;
   gap: 123px;
+  margin-bottom: 70px;
 }
 
 .services-button-list {
@@ -690,9 +708,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   width: 253px;
@@ -730,17 +745,11 @@ body {
   font-style: normal;
 }
 
-.footer-address-left {
-  display: flex;
-  width: 240px;
-  align-items: center;
-}
-
 .footer-center-wrapper {
   display: flex;
   flex-direction: column;
-  /* width: 444px; */
-  padding-top: 140px;
+  margin-left: 123px;
+  gap: 62px;
 }
 
 .footer-social {
@@ -751,9 +760,9 @@ body {
 .footer-address-right {
   display: flex;
   flex-direction: column;
-  padding-top: 164px;
   align-items: flex-end;
   justify-content: space-between;
+  margin-left: 183px;
 }
 
 .footer-internal-link-list {
@@ -761,15 +770,14 @@ body {
   justify-content: space-between;
   list-style: none;
   margin: 0;
+  padding: 0;
+  gap: 35px;
 }
 
 .footer-social-list {
   display: flex;
-  margin: 0 auto;
-}
-
-.logo-footer {
-  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 .header-top-button.log-out {
@@ -781,8 +789,6 @@ body {
 .inner-header {
   display: flex;
   flex-direction: column;
-  padding-left: 120px;
-  padding-right: 21px;
 }
 
 .breadcrumbs {
@@ -823,7 +829,20 @@ body {
 }
 
 .product-card-list {
-  margin: o;
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.flex-footer-wrapper {
+  display: flex;
+}
+
+.logo-link-footer {
+  padding-top: 62px;
+  display: block;
+}
+
+.slider {
+  margin-bottom: 70px;
 }
