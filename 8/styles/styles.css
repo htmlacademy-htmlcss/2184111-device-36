@@ -34,7 +34,7 @@ body {
 }
 
 .max-width {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -251,7 +251,7 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-
+er-adresss
 .link-button {
   background-color: #ffffff;
   border: 0;
@@ -296,6 +296,7 @@ body {
   color: #ffffff;
   background-color: #444444;
   width: 239px;
+  margin-bottom: 64px
 }
 
 .description-text {
@@ -308,6 +309,7 @@ body {
   background-color: #444444;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 140px;
 }
 
 .contacts-phone {
@@ -321,6 +323,7 @@ body {
 .htmlacademy-link {
   display: block;
   margin-top: 63px;
+  margin-bottom: 65px;
 }
 
 .breadcrumbs-link {
@@ -339,6 +342,7 @@ body {
   line-height: 50px;
   color: inherit;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .catalog-filter {
@@ -637,7 +641,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 280px;
-  height: 190px;
   justify-content: center;
   gap: 35px;
 }
@@ -750,6 +753,7 @@ body {
   flex-direction: column;
   margin-left: 123px;
   gap: 62px;
+  padding-top: 137px;
 }
 
 .footer-social {
@@ -762,7 +766,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  margin-left: 183px;
+  margin-left: 174px;
 }
 
 .footer-internal-link-list {
@@ -789,6 +793,7 @@ body {
 .inner-header {
   display: flex;
   flex-direction: column;
+  padding-left: 60px;
 }
 
 .breadcrumbs {
@@ -807,6 +812,17 @@ body {
 .catalog-filter {
   width: 320px;
   border: none;
+  padding: 0;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -839,8 +855,9 @@ body {
 }
 
 .logo-link-footer {
-  padding-top: 62px;
+  margin-top: 62px;
   display: block;
+  margin-bottom: 36px;
 }
 
 .slider {
