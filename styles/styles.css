@@ -339,6 +339,7 @@ body {
   line-height: 50px;
   color: inherit;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .catalog-filter {
@@ -789,6 +790,7 @@ body {
 .inner-header {
   display: flex;
   flex-direction: column;
+  padding-left: 60px;
 }
 
 .breadcrumbs {
@@ -807,6 +809,17 @@ body {
 .catalog-filter {
   width: 320px;
   border: none;
+  padding: 0;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
