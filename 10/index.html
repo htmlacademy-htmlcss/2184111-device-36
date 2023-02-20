@@ -21,9 +21,7 @@
               class="header-search"
               action="https://echo.htmlacademy.ru/"
               method="get">
-              <label class="visually-hidden" for="search-form">
-                Поле поиска
-              </label>
+              <label class="visually-hidden" for="search-form">Поле поиска</label>
               <input
                 class="search-form"
                 name="search-form"
@@ -40,17 +38,11 @@
             </form>
 
             <ul class="header-top-login-list">
-              <li class="header-top-button-item">
-                <a class="header-top-button" href="#"> <div class="svg-header-button-icon-placeholder"></div> Войти</a>
-              </li>
+              <li class="header-top-button-item"><a class="header-top-button" href="#">Войти</a></li>
             </ul>
             <ul class="header-top-button-list">
-              <li class="header-top-button-item">
-                <a class="header-top-button" href="#"><div class="svg-header-button-icon-placeholder"></div> Сравнить</a>
-              </li>
-              <li class="header-top-button-item">
-                <span class="cart-product-amount"><div class="svg-header-button-icon-circle"></div> 2</span>
-                <a class="header-top-button" href="#"><div class="svg-header-button-icon-placeholder"></div> Корзина</a>
+              <li class="header-top-button-item"><a class="header-top-button" href="#">Сравнить</a></li>
+              <li class="header-top-button-item"><!-- <span class="cart-product-amount">2</span> --><a class="header-top-button" href="#">Корзина</a>
               </li>
             </ul>
           </div>
@@ -104,9 +96,27 @@
           <div class="catalog-navigation-wrapper">
             <div class="header-catalog-buttons">
               <button class="button header-catalog-button" type="button">
-                Каталог товаров <div class="catalog-popup-placeholder"></div>
+                Каталог товаров
               </button>
+            </div>
 
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#delivery">Доставка</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#warranty">Грантия</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="catalog-navigation-wrapper">
+            <nav class="header-popup-menu">
               <ul class="header-popup-list">
                 <li class="header-popup-item">
                   <a class="header-popup-link" href="catalog.html"
@@ -120,6 +130,8 @@
                   <a class="header-popup-link" href="catalog.html"
                     >Экшен камеры</a>
                 </li>
+              </ul>
+              <ul class="header-popup-list">
                 <li class="header-popup-item">
                   <a class="header-popup-link" href="catalog.html"
                     >Фитнес-браслеты</a>
@@ -128,23 +140,11 @@
                   <a class="header-popup-link" href="catalog.html">
                     Умные часы</a>
                 </li>
+              </ul>
+              <ul class="header-popup-list">
                 <li class="header-popup-item">
                   <a class="header-popup-link" href="catalog.html"
                     >Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
-
-            <nav class="navigation">
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#delivery">Доставка</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#warranty">Грантия</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -171,8 +171,7 @@
                   src="images\slider\copter.png"
                   width="560"
                   height="560"
-                  alt="Квадрокоптер"
-                />
+                  alt="Квадрокоптер"/>
                 <div class="slider-card">
                   <!-- <span class="slider-number">01</span> -->
                   <h3 class="slider-title">
@@ -288,7 +287,7 @@
               </li>
               <li class="product-categories-item">
                 <a class="product-categories-link" href="catalog.html">
-                  Моноподы<br />для селфи</a>
+                  Моноподы&nbsp;для селфи</a>
               </li>
               <li class="product-categories-item">
                 <a class="product-categories-link" href="catalog.html">
@@ -315,7 +314,7 @@
               <li class="services-button-item">
                 <button
                   class="link-button services-button-current"
-                  type="button" >
+                  type="button">
                   Доставка
                 </button>
               </li>
@@ -334,49 +333,42 @@
             <ul class="services-list">
               <li class="services-item">
                 <div class="services-column-wrapper">
-                <h3 class="service-title" id="delivery">Доставка</h3>
-                <p class="description-text description-services">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
-                </p>
+                  <h3 class="service-title" id="delivery">Доставка</h3>
+                  <p class="description-text description-services">
+                    Мы с удовольствием доставим ваш товар прямо к вашему
+                    подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                    поднимая его на ваш этаж.
+                  </p>
                 </div>
-                <div class="services-icon-placeholder"></div>
               </li>
               <li class="services-item">
                 <div class="services-column-wrapper">
-                <h3 class="service-title" id="warranty">Гарантия</h3>
-                <p class="description-text description-services">
-                  Если из-за возгорания купленного у нас товара у вас сгорит дом
-                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
-                  же.
-                </p>
+                  <h3 class="service-title" id="warranty">Гарантия</h3>
+                  <p class="description-text description-services">
+                    Если из-за возгорания купленного у нас товара у вас сгорит
+                    дом — не переживайте, мы выдадим вам новый. Товар, не дом,
+                    конечно же.
+                  </p>
                 </div>
-                <div class="services-icon-placeholder"></div>
               </li>
               <li class="services-item">
                 <div class="services-column-wrapper">
-                <h3 class="service-title" id="credit">Кредит</h3>
-                <p class="description-text description-services">
-                  Кредит Залезть в долговую яму стало проще! Кредитные
-                  консультанты подберут для вас наиболее выгодные условия
-                  кредита. Выгодные для банка, разумеется.
-                </p>
-              </div>
-                <div class="services-icon-placeholder"></div>
+                  <h3 class="service-title" id="credit">Кредит</h3>
+                  <p class="description-text description-services">
+                    Кредит Залезть в долговую яму стало проще! Кредитные
+                    консультанты подберут для вас наиболее выгодные условия
+                    кредита. Выгодные для банка, разумеется.
+                  </p>
+                </div>
               </li>
             </ul>
           </section>
 
           <section class="special-delivery restricted-width">
             <h2 class="visually-hidden">Специальная доставка</h2>
-            <div class="special-delivery-wrapper">
-              <div class="special-delivery-icon-placeholder">иконка</div>
             <a class="special-delivery-button" href="#">
               Доставим редкий товар под заказ
             </a>
-            <div class="special-delivery-icon-placeholder">иконка</div>
-          </div>
           </section>
 
           <!-- <dialog class="special-delivery-modal-window" open>
@@ -495,8 +487,7 @@
           <section class="newsletter">
             <div class="subscription-area restricted-width">
               <div class="subscription-row-wrapper">
-                <h2 class="visually-hidden">Подписка на рассылку</h2>
-                <b class="newsletter-call">Подпишитесь на рассылку</b>
+                <h2 class="newsletter-call">Подпишитесь на рассылку</h2>
                 <p class="description-text description-text-subscription">
                   Еженедельный дайджест с обзорами новинок, длительными
                   тест-драйвами, распаковками, а также акции, спецпредложения и
@@ -568,7 +559,8 @@
                   <a
                     class="social-link"
                     href="https://t.me/htmlacademy"
-                    target="_blank"> <div class="space40x40"></div>
+                    target="_blank">
+                    <div class="space40x40"></div>
                     <span class="visually-hidden">Телеграм</span>
                   </a>
                 </li>
@@ -576,7 +568,8 @@
                   <a
                     class="social-link"
                     href="https://www.youtube.com/user/htmlacademyru"
-                    target="_blank"> <div class="space40x40"></div>
+                    target="_blank">
+                    <div class="space40x40"></div>
                     <span class="visually-hidden">Ютуб</span>
                   </a>
                 </li>
@@ -584,8 +577,10 @@
                   <a
                     class="social-link"
                     href="https://twitter.com/htmlacademy_ru"
-                    target="_blank"> <div class="space40x40">
-                    <span class="visually-hidden">Твиттер</span></div>
+                    target="_blank">
+                    <div class="space40x40">
+                      <span class="visually-hidden">Твиттер</span>
+                    </div>
                   </a>
                 </li>
               </ul>

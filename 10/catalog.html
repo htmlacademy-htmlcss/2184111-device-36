@@ -39,26 +39,26 @@
               </button>
             </form>
 
-            <ul class="header-top-login-list no-gap justify-content-space-between">
-              <li class="header-top-button-item ">
-                <a class="header-top-button" href="#"><div class="svg-header-button-icon-placeholder-small"></div>Коля Петухов</a>
+            <ul class="header-top-login-list">
+              <li class="header-top-button-item">
+                <a class="header-top-button" href="#">Коля Петухов</a>
               </li>
               <li class="header-top-button-item">
                 <span class="header-top-button log-out" href="#">Выйти</span>
               </li>
             </ul>
-            <ul class="header-top-button-list no-gap justify-content-space-between">
+            <ul class="header-top-button-list">
               <li class="header-top-button-item">
-                <a class="header-top-button" href="#"><div class="svg-header-button-icon-placeholder-small"></div> Сравнить</a>
+                <a class="header-top-button" href="#">Сравнить</a>
               </li>
               <li class="header-top-button-item">
-                <span class="cart-product-amount"><div class="svg-header-button-icon-circle"></div> 2</span>
-                <a class="header-top-button" href="#"><div class="svg-header-button-icon-placeholder-small"></div> Корзина</a>
+                <!-- <span class="cart-product-amount">2</span> -->
+                <a class="header-top-button" href="#">Корзина</a>
               </li>
             </ul>
           </div>
 
-                   <!-- <section class="cart-popover">
+          <!-- <section class="cart-popover">
         <h2 class="visually-hidden">Содержимое корзины</h2>
         <ul class="cart-product-list">
           <li class="cart-product-item">
@@ -109,28 +109,6 @@
               <button class="button header-catalog-button" type="button">
                 Каталог товаров
               </button>
-
-              <!--скрыл выпадающий список для абсолютного позиционирования <ul class="header-popup-list">
-              <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html"
-                  >Виртуальная реальность</a>
-              </li>
-              <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html">Моноподы <br /> для селфи</a>
-              </li>
-              <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html">Экшен камеры</a>
-              </li>
-              <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html">Фитнес-браслеты</a>
-              </li>
-              <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html">Умные часы</a>
-              </li>
-              <li class="header-popup-item">
-                <a class="header-popup-link" href="catalog.html">Квадрокоптеры</a>
-              </li>
-            </ul> -->
             </div>
 
             <nav class="navigation">
@@ -143,6 +121,47 @@
                 </li>
                 <li class="navigation-item">
                   <a class="navigation-link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="catalog-navigation-wrapper">
+            <nav class="header-popup-menu">
+              <ul class="header-popup-list">
+                <li class="header-popup-item">
+                  <a class="header-popup-link" href="catalog.html"
+                    >Виртуальная реальность</a
+                  >
+                </li>
+                <li class="header-popup-item">
+                  <a class="header-popup-link" href="catalog.html"
+                    >Моноподы для селфи</a
+                  >
+                </li>
+                <li class="header-popup-item">
+                  <a class="header-popup-link" href="catalog.html"
+                    >Экшен камеры</a
+                  >
+                </li>
+              </ul>
+              <ul class="header-popup-list">
+                <li class="header-popup-item">
+                  <a class="header-popup-link" href="catalog.html"
+                    >Фитнес-браслеты</a
+                  >
+                </li>
+                <li class="header-popup-item">
+                  <a class="header-popup-link" href="catalog.html">
+                    Умные часы</a
+                  >
+                </li>
+              </ul>
+              <ul class="header-popup-list">
+                <li class="header-popup-item">
+                  <a class="header-popup-link" href="catalog.html"
+                    >Квадрокоптеры</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -198,8 +217,7 @@
                         type="checkbox"
                         name="color-white"
                         id="white"
-                        checked
-                      />
+                        checked/>
                       <label for="white">Белый</label>
                     </li>
                     <li class="catalog-filter-item">
@@ -218,8 +236,7 @@
                         type="checkbox"
                         name="color-red"
                         id="red"
-                        disabled
-                      />
+                        disabled/>
                       <label for="red">Красный</label>
                     </li>
                     <li class="catalog-filter-item">
@@ -228,8 +245,7 @@
                         type="checkbox"
                         name="color-pink"
                         id="pink"
-                        disabled
-                      />
+                        disabled/>
                       <label for="pink">Розовый</label>
                     </li>
                   </ul>
@@ -265,7 +281,9 @@
 
             <div class="catalog-column-wrapper">
               <section class="product-sorting">
-                <h2 class="catalog-subtitle catalog-subtitle-sorting">Сортировка:</h2>
+                <h2 class="catalog-subtitle catalog-subtitle-sorting">
+                  Сортировка:
+                </h2>
                 <select class="select-control" aria-label="Сортировка">
                   <option value="popular">Популярные</option>
                   <option value="expensive">Дорогие</option>
@@ -296,7 +314,8 @@
                           src="images/catalog/selfie-stick-amateur.jpg"
                           height="360"
                           width="380"
-                          alt=""/>
+                          alt=""
+                        />
                         <h3 class="product-card-title">
                           Любительская селфи-палка
                         </h3>
@@ -310,7 +329,8 @@
                           src="images/catalog/selfie-stick-pro.jpg"
                           height="360"
                           width="380"
-                          alt=""/>
+                          alt=""
+                        />
                         <h3 class="product-card-title">
                           Профессиональная селфи-палка
                         </h3>
@@ -364,22 +384,34 @@
                       </a>
                       <ol class="pagination-list">
                         <li class="pagination-item">
-                          <span class="pagination-button pagination-button-current">1</span>
+                          <span
+                            class="pagination-button pagination-button-current"
+                            >1</span>
                         </li>
                         <li class="pagination-item">
-                          <a class="pagination-button pagination-button-link" href="#">2</a>
+                          <a
+                            class="pagination-button pagination-button-link"
+                            href="#"
+                            >2</a>
                         </li>
                         <li class="pagination-item">
-                          <a class="pagination-button pagination-button-link" href="#">3</a>
+                          <a
+                            class="pagination-button pagination-button-link"
+                            href="#"
+                            >3</a>
                         </li>
                         <li class="pagination-item">
                           <span class="pagination-button">...</span>
                         </li>
                         <li class="pagination-item">
-                          <a class="pagination-button pagination-button-link" href="#">15</a>
+                          <a
+                            class="pagination-button pagination-button-link"
+                            href="#"
+                            >15</a>
                         </li>
                       </ol>
-                      <a class="pagination-button side-button" href="#">вперёд</a>
+                      <a class="pagination-button side-button" href="#"
+                        >вперёд</a>
                     </div>
                   </section>
                 </section>
@@ -430,7 +462,9 @@
                     class="social-link"
                     href="https://t.me/htmlacademy"
                     target="_blank">
-                    <div class="space40x40"><span class="visually-hidden">Телеграм</span></div>
+                    <div class="space40x40">
+                      <span class="visually-hidden">Телеграм</span>
+                    </div>
                   </a>
                 </li>
                 <li class="footer-social-item">
@@ -438,7 +472,9 @@
                     class="social-link"
                     href="https://www.youtube.com/user/htmlacademyru"
                     target="_blank">
-                    <div class="space40x40"><span class="visually-hidden">Ютуб</span></div>
+                    <div class="space40x40">
+                      <span class="visually-hidden">Ютуб</span>
+                    </div>
                   </a>
                 </li>
                 <li class="footer-social-item">
@@ -446,7 +482,9 @@
                     class="social-link"
                     href="https://twitter.com/htmlacademy_ru"
                     target="_blank">
-                    <div class="space40x40"><span class="visually-hidden">Твиттер</span></div>
+                    <div class="space40x40">
+                      <span class="visually-hidden">Твиттер</span>
+                    </div>
                   </a>
                 </li>
               </ul>
