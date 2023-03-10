@@ -60,55 +60,54 @@
                   href="#">
                   <span class="cart-product-amount">2</span>
                   Корзина</a>
+                  <div class="cart-popover">
+                    <h2 class="visually-hidden">Содержимое корзины</h2>
+                    <ul class="cart-product-list">
+                      <li class="cart-product-item">
+                        <a class="cart-link opacity-type-interaction" href="#">
+                          <img
+                            class="cart-img"
+                            src="images/catalog/selfie-stick-amateur.jpg"
+                            width="39"
+                            height="43"/>
+                          <h3 class="cart-product-title">Любительская <br/>селфи-палка</h3>
+                        </a>
+                        <button class="cart-product-delete opacity-type-interaction" type="button">
+                          <span class="visually-hidden">Удалить товар</span>
+                        </button>
+                      </li>
+                      <li class="cart-product-item">
+                        <a class="cart-link opacity-type-interaction" href="#">
+                          <img
+                            class="cart-img"
+                            src="images/catalog/selfie-stick-pro.jpg"
+                            width="39"
+                            height="43"
+                            alt="Профессиональная селфи палка"/>
+                          <h3 class="cart-product-title">Профессиональная селфи-палка</h3>
+                        </a>
+                        <button class="cart-product-delete opacity-type-interaction" type="button">
+                          <span class="visually-hidden">Удалить товар</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="cart-row-wrapper">
+                      <div class="cart-amount">
+                         <span class="cart-value-name">Товаров:</span>
+                         <span class="cart-amount">2</span>
+                      </div>
+                      <div class="card-summ">
+                        <span class="cart-value-name">Сумма:</span>
+                        <span class="cart-amount">2000 ₽</span>
+                      </div>
+                    </div>
+                    <div class="open-cart-wrapper">
+                    <a class="cart-open-link" href="#"><span class="cart-open-span">Открыть корзину</span></a>
+                    </div>
+                  </div>
               </li>
             </ul>
           </div>
-
-          <!-- <section class="cart-popover">
-        <h2 class="visually-hidden">Содержимое корзины</h2>
-        <ul class="cart-product-list">
-          <li class="cart-product-item">
-            <a class="cart-link" href="#">
-              <img
-                class="cart-img"
-                src="images/catalog/selfie-stick-amateur.jpg"
-                width="39"
-                height="43"/>
-              <h3 class="cart-product-title">Любительская селфи-палка</h3>
-            </a>
-            <button class="cart-product-delete" type="button">
-              <span class="visually-hidden">Удалить товар</span>
-            </button>
-          </li>
-          <li class="cart-product-item">
-            <a class="cart-link" href="#">
-              <img
-                class="cart-img"
-                src="images/catalog/selfie-stick-pro.jpg"
-                width="39"
-                height="43"
-                alt="Профессиональная селфи палка"/>
-              <h3 class="cart-product-title">Профессиональная селфи-палка</h3>
-            </a>
-            <button class="cart-product-delete" type="button">
-              <span class="visually-hidden">Удалить товар</span>
-            </button>
-          </li>
-        </ul>
-        <div class="cart-row-wrapper">
-          <div class="cart-amount">
-             <span class="cart-value-name">Товаров:</span>
-             <span class="cart-amount">2</span>
-          </div>
-          <div class="card-summ">
-            <span class="cart-value-name">Сумма:</span>
-            <span class="cart-amount">2000 ₽</span>
-          </div>
-        </div>
-        <div class="open-cart-wrapper">
-        <a class="cart-open-link" href="#">Открыть корзину</a>
-        </div>
-        </section>-->
 
           <div class="catalog-navigation-wrapper">
             <div class="header-catalog-buttons">
@@ -141,12 +140,12 @@
                   <li class="header-popup-item">
                     <a
                       class="header-popup-link opacity-type-interaction"
-                      href="catalog.html"
-                      >Фитнес-браслеты</a>
+                      href="catalog.html">
+                      Фитнес-браслеты</a>
                   </li>
                   <li class="header-popup-item">
                     <a
-                      class="header-popup-link opacity-type-interaction"
+                      class="header-popup-link header-popup-link-current opacity-type-interaction"
                       href="catalog.html">
                       Умные часы</a>
                   </li>
@@ -166,7 +165,7 @@
               <ul class="navigation-list">
                 <li class="navigation-item">
                   <a
-                    class="navigation-link opacity-type-interaction"
+                    class="navigation-link navigation-link-current opacity-type-interaction"
                     href="#delivery"
                     >Доставка</a>
                 </li>
@@ -193,8 +192,8 @@
           <section class="slider restricted-width">
             <h2 class="visually-hidden">Витрина</h2>
 
-            <button class="slider-button-prev" type="button">
-              <svg
+            <button class="slider-button-prev opacity-type-interaction" type="button">
+              <!-- <svg
                 class="opacity-type-interaction"
                 aria-hidden="true"
                 focusable="false"
@@ -207,11 +206,11 @@
                   fill="#000"
                   d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"
                 />
-              </svg>
+              </svg> -->
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="slider-button-next" type="button">
-              <svg
+            <button class="slider-button-next opacity-type-interaction" type="button">
+              <!-- <svg
                 class="opacity-type-interaction"
                 aria-hidden="true"
                 focusable="false"
@@ -221,12 +220,12 @@
                 fill="none"
                 viewBox="0 0 21 60">
                 <path fill="#000" d="M.5 0H4l16.5 30L4 60H.5l16.2-30L.5 0Z" />
-              </svg>
+              </svg> -->
               <span class="visually-hidden">Следующий слайд</span>
             </button>
 
             <ol class="slider-list">
-              <li class="slider-item">
+              <li class="slider-item slider-item-active">
                 <img
                   class="slider-image"
                   src="images\slider\copter.png"
@@ -260,15 +259,15 @@
               </li>
 
               <li class="slider-item">
-                <img
+                 <img
                   class="slider-image"
                   src="images\slider\fitness-braclet.png"
                   width="560"
                   height="560"
                   alt="Фитнес-браслет"/>
                 <div class="slider-card">
-                  <!-- <span class="slider-number">02</span> -->
-                  <h3 class="slider-title">Худеем правильно!</h3>
+                  <span class="slider-number">02</span>
+                  <h3 class="slider-title">Худеем<br/>правильно!</h3>
                   <p class="slider-card-text">
                     Мотивирующие фитнес-браслеты помогут найти в себе силы не
                     пропускать занятия и соблюдать диету.
@@ -287,15 +286,15 @@
               </li>
 
               <li class="slider-item">
-                <img
+                 <img
                   class="slider-image"
                   src="images\slider\selfie-stick.png"
                   width="560"
                   height="560"
                   alt="Селфи-палка"/>
                 <div class="slider-card">
-                  <!-- <span class="slider-number">03</span> -->
-                  <h3 class="slider-title">Делай селфи как Бэн Стиллер!</h3>
+                  <span class="slider-number-3">03</span>
+                  <h3 class="slider-title">Делай селфи, как&nbspБэн&nbspСтиллер!</h3>
                   <p class="slider-card-text">
                     Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -347,7 +346,8 @@
             </ol>
           </section>
 
-          <section class="restricted-width product-categories">
+          <section class="product-categories">
+            <div class="restricted-width">
             <h2 class="visually-hidden">Категории товаров</h2>
 
             <ul class="product-categories-list">
@@ -388,9 +388,12 @@
                   Квадрокоптеры</a>
               </li>
             </ul>
+          </div>
           </section>
 
-          <section class="services restricted-width">
+          <section class="services">
+            <div class="gray-background-services"></div>
+            <div class="restricted-width-services">
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="services-button-list">
               <li class="services-button-item">
@@ -417,7 +420,7 @@
             </ul>
 
             <ul class="services-list">
-              <li class="services-item services-item-delivery">
+              <li class="services-item services-item-delivery services-item-active">
                 <h3 class="service-title" id="delivery">Доставка</h3>
                 <p class="description-text description-services">
                   Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему
@@ -442,9 +445,11 @@
                 </p>
               </li>
             </ul>
+          </div>
           </section>
 
-          <section class="special-delivery restricted-width">
+          <section class="special-delivery">
+            <div class="restricted-width">
             <h2 class="visually-hidden">Специальная доставка</h2>
             <div class="focus-serapator">
               <a class="special-delivery-button" href="#">
@@ -452,11 +457,12 @@
               </a>
             </div>
           </section>
+            </div>
 
-          <!-- <dialog class="special-delivery-modal-window" open>
+          <dialog class="special-delivery-modal-window" open>
           <div class="dialog-row-wrapper">
         <h2 class="special-delivery-title">Доставка под заказ</h2>
-        <button class="special-delivery-close-button" type="button">
+        <button class="special-delivery-close-button opacity-type-interaction" type="button">
          </div>
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -475,7 +481,7 @@
               type="text"
               placeholder="Введите имя"
               required/>
-            <span class="special-deliery-hint">Добавьте имя</span>
+            <!-- <span class="special-deliery-hint">Добавьте имя</span> -->
           </p>
           <div class="special-delivery-email-container">
 
@@ -485,9 +491,10 @@
               name="special-delivery-email"
               id="special-delivery-email"
               type="email"
-              placeholder="почта"/>
+              placeholder="почта"
+              required/>
 
-            <span class="special-deliery-hint special-deliery-hint-red"
+            <span class="special-deliery-hint"
               >Забавный у вас адрес</span>
           </div>
         </div>
@@ -499,24 +506,29 @@
               name="special-delivery-product"
               id="special-delivery-product"
               type="text"
-              placeholder="В свободной форме"/>
+              placeholder="В свободной форме"
+              required/>
           </p>
           <div class="dialog-amount-wrapper">
-            <span class="special-delivery-lebel">Количество:</span>
+            <span class="special-delivery-lebel-amount">
+              Количество:
+            </span>
+            <p class="amount-hidden-span">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+              к&nbspпровозу багажа.</p>
             <div class="amount-buttons-wrapper">
-            <button class="minus-button" type="button">
+            <button class="minus-button opacity-type-interaction" type="button">
               <span class="visually-hidden">Меньше</span>
             </button>
-            <input class="amount-of-product" type="number" name="amount-of-product" value="1"/>
-            <button class="plus-button" type="button">
+            <input class="amount-of-product opacity-type-interaction" type="number" name="amount-of-product" value="1" min="0" max="50" maxlength="2"/>
+            <button class="plus-button opacity-type-interaction" type="button">
               <span class="visually-hidden">Больше</span>
             </button>
           </div>
           </div>
           </div>
-          <input class="link-button dialog-submit-button" type="submit" value="отправить"/>
+          <button class="link-button dialog-submit-button yellow-rectangle-button-type" type="submit">отправить</button>
         </form>
-      </dialog> -->
+      </dialog>
 
           <div class="column-section-wrapper restricted-width">
             <section class="company-info">
@@ -576,8 +588,8 @@
               <div class="subscription-row-wrapper">
                 <h2 class="newsletter-call">Подпишитесь на рассылку</h2>
                 <p class="description-text description-text-subscription">
-                  Еженедельный дайджест с обзорами новинок, длительными
-                  тест-драйвами, распаковками, а также акции, спецпредложения и
+                  Еженедельный дайджест с обзорами новинок, длительными&nbspтест-драйвами,
+                   распаковками, а также акции, спецпредложения и
                   вот это вот всё.
                 </p>
               </div>
@@ -610,7 +622,7 @@
         <div class="footer-grid restricted-width">
           <div class="focus-serapator">
             <h2 class="visually-hidden">Контакты</h2>
-            <a class="logo-link-footer opacity-type-interaction" href="#">
+            <a href="#" class="logo-link-footer opacity-type-interaction" href="#">
               <img
                 class="logo-footer"
                 src="images\footer\logo.svg"
