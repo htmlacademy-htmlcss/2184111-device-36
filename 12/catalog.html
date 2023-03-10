@@ -13,7 +13,7 @@
       <header class="main-header">
         <div class="restricted-width yellow-background">
           <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
-          <a class="logo-link" href="#">
+          <a class="logo-link" href="index.html">
             <img
               class="logo opacity-type-interaction"
               src="images/header/logo.svg"
@@ -78,6 +78,51 @@
                   href="#">
                   <span class="cart-product-amount">2</span>
                   Корзина</a>
+                  <div class="cart-popover">
+                    <h2 class="visually-hidden">Содержимое корзины</h2>
+                    <ul class="cart-product-list">
+                      <li class="cart-product-item">
+                        <a class="cart-link opacity-type-interaction" href="#">
+                          <img
+                            class="cart-img"
+                            src="images/catalog/selfie-stick-amateur.jpg"
+                            width="39"
+                            height="43"/>
+                          <h3 class="cart-product-title">Любительская <br/>селфи-палка</h3>
+                        </a>
+                        <button class="cart-product-delete opacity-type-interaction" type="button">
+                          <span class="visually-hidden">Удалить товар</span>
+                        </button>
+                      </li>
+                      <li class="cart-product-item">
+                        <a class="cart-link opacity-type-interaction" href="#">
+                          <img
+                            class="cart-img"
+                            src="images/catalog/selfie-stick-pro.jpg"
+                            width="39"
+                            height="43"
+                            alt="Профессиональная селфи палка"/>
+                          <h3 class="cart-product-title">Профессиональная селфи-палка</h3>
+                        </a>
+                        <button class="cart-product-delete opacity-type-interaction" type="button">
+                          <span class="visually-hidden">Удалить товар</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="cart-row-wrapper">
+                      <div class="cart-amount">
+                         <span class="cart-value-name">Товаров:</span>
+                         <span class="cart-amount">2</span>
+                      </div>
+                      <div class="card-summ">
+                        <span class="cart-value-name">Сумма:</span>
+                        <span class="cart-amount">2000 ₽</span>
+                      </div>
+                    </div>
+                    <div class="open-cart-wrapper">
+                    <a class="cart-open-link" href="#"><span class="cart-open-span">Открыть корзину</span></a>
+                    </div>
+                  </div>
               </li>
             </ul>
           </div>
@@ -238,60 +283,83 @@
                   class="catalog-filter"
                   action="https://echo.htmlacademy.ru/"
                   method="get">
-                  <!--to be continued
+
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
+              <div class="range">
+                <div class="scale-bar">
+                  <div class="range-bar" style="left: 0; width: 110px;">
+                    <button class="range-toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
+                    <button class="range-toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
+                      <label class="catalog-filter-label-start">от<input class="range-input" type="number" value="0" name="min-price"></label>
+                      <label class="catalog-filter-label-end">до<input class="range-input" type="number" value="5000" name="max-price"></label>
+                  </div>
+                </div>
+              </div>
           </fieldset>
-          -->
 
                   <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Цвет</legend>
+                    <legend class="catalog-filter-title catalog-filter-title-color">Цвет</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <input
-                          class="filter-checkbox"
-                          type="checkbox"
-                          name="color-black"
-                          id="black"
-                          checked/>
-                        <label for="black">Черный</label>
+                        <label class="control opacity-type-interaction">
+                          <input
+                            class="filter-checkbox visually-hidden"
+                            type="checkbox"
+                            name="color-black"
+                            id="black"
+                            checked/>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Черный</span>
+                         </label>
                       </li>
                       <li class="catalog-filter-item">
+                        <label class="control opacity-type-interaction">
                         <input
-                          class="filter-checkbox"
+                          class="filter-checkbox visually-hidden"
                           type="checkbox"
                           name="color-white"
                           id="white"
                           checked/>
-                        <label for="white">Белый</label>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Белый</span></label>
                       </li>
                       <li class="catalog-filter-item">
-                        <input
-                          class="filter-checkbox"
+                        <label class="control opacity-type-interaction">
+                         <input
+                          class="filter-checkbox visually-hidden"
                           type="checkbox"
                           name="color-blue"
                           id="blue"
-                          disabled/>
-                        <label for="blue">Синий</label>
+                          />
+                          <span class="control-mark"></span>
+                            <span class="control-label">Черный</span>
+                        </label>
                       </li>
 
                       <li class="catalog-filter-item">
+                        <label class="control opacity-type-interaction">
                         <input
-                          class="filter-checkbox"
+                          class="filter-checkbox visually-hidden"
                           type="checkbox"
                           name="color-red"
                           id="red"
-                          disabled/>
-                        <label for="red">Красный</label>
+                          />
+                          <span class="control-mark"></span>
+                            <span class="control-label">Красный</span>
+                        </label>
                       </li>
                       <li class="catalog-filter-item">
+                        <label class="control opacity-type-interaction">
                         <input
-                          class="filter-checkbox"
+                          class="filter-checkbox visually-hidden"
                           type="checkbox"
                           name="color-pink"
                           id="pink"
-                          disabled/>
-                        <label for="pink">Розовый</label>
+                          />
+                          <span class="control-mark"></span>
+                            <span class="control-label">Розовый</span>
+                        </label>
                       </li>
                     </ul>
                   </fieldset>
@@ -300,22 +368,28 @@
                     <legend class="catalog-filter-title">Bluetooth</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
+                        <label class="control opacity-type-interaction">
                         <input
-                          class="filter-radio"
+                          class="filter-radio visually-hidden"
                           type="radio"
-                          name="radio-batton"
+                          name="radio-button"
                           id="radio-yes"
                           value="Yes-Bluetooth"/>
-                        <label for="radio-yes">Есть</label>
+                        <span class="control-circle-mark"></span>
+                        <span class="control-circle-label">Есть</span>
+                        </label>
                       </li>
                       <li class="catalog-filter-item">
+                        <label class="control opacity-type-interaction">
                         <input
-                          class="filter-radio"
+                          class="filter-radio visually-hidden"
                           type="radio"
-                          name="radio-batton"
+                          name="radio-button"
                           id="radio-no"
                           value="No-Bluetooth"/>
-                        <label for="radio-no">Нет</label>
+                          <span class="control-circle-mark"></span>
+                          <span class="control-circle-label">Нет</span>
+                      </label>
                       </li>
                     </ul>
                   </fieldset>
@@ -333,7 +407,7 @@
                   <h2 class="catalog-subtitle catalog-subtitle-sorting">
                     Сортировка:
                   </h2>
-                  <select class="select-control" aria-label="Сортировка">
+                  <select class="select-control opacity-type-interaction" aria-label="Сортировка">
                     <option value="popular">Популярные</option>
                     <option value="expensive">Дорогие</option>
                     <option value="cheap">Дешевые</option>
@@ -357,8 +431,8 @@
                     <h2 class="visually-hidden">Карточки товаров</h2>
                     <ul class="product-card-list">
                       <li class="product-card-item">
-                        <div class="catalog-product-hover"></div>
-                        <a class="product-card-link" href="product.html">
+                        <span class="product-card-span">подробнee</span>
+                        <a class="product-card-link" href="#">
                           <img
                             class="product-img"
                             src="images/catalog/selfie-stick-amateur.jpg"
@@ -372,9 +446,10 @@
                           </div>
                         </a>
                       </li>
-                      <li class="product-card-item">
-                        <div class="catalog-product-hover"></div>
-                        <a class="product-card-link" href="product.html">
+                      <li class="product-card-item product-card-item-new">
+                        <span class="visually-hidden">новый товар.</span>
+                        <span class="product-card-span">подробнee</span>
+                        <a class="product-card-link" href="#">
                           <img
                             class="product-img"
                             src="images/catalog/selfie-stick-pro.jpg"
@@ -389,8 +464,9 @@
                         </a>
                       </li>
                       <li class="product-card-item">
-                        <div class="catalog-product-hover"></div>
-                        <a class="product-card-link" href="product.html">
+                        <span class="product-card-span">подробнee</span>
+                        <a class="product-card-link" href="#">
+
                           <img
                             class="product-img"
                             src="images/catalog/selfie-stick-waterproof.jpg"
@@ -406,8 +482,8 @@
                         </a>
                       </li>
                       <li class="product-card-item">
-                        <div class="catalog-product-hover"></div>
-                        <a class="product-card-link" href="product.html">
+                        <span class="product-card-span">подробнee</span>
+                        <a class="product-card-link" href="#">
                           <img
                             class="product-img"
                             src="images/catalog/selfie-stick-amateur.jpg"
@@ -471,7 +547,7 @@
         <div class="footer-grid restricted-width">
           <div class="focus-serapator">
             <h2 class="visually-hidden">Контакты</h2>
-            <a class="logo-link-footer opacity-type-interaction" href="#">
+            <a href="index.html" class="logo-link-footer opacity-type-interaction" href="#">
               <img
                 class="logo-footer"
                 src="images\footer\logo.svg"
