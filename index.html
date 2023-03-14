@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico"> <!-- 16×16 -->
     <title>HTML Academy: Девайс</title>
   </head>
 
@@ -34,7 +35,7 @@
                 placeholder="Поиск по сайту"
                 id="search-form"
                 required/>
-              <button class="header-search-button" type="submit" value="Найти">
+              <button class="header-search-button" type="submit">
                 Найти
               </button>
             </form>
@@ -69,7 +70,8 @@
                           class="cart-img"
                           src="images/catalog/selfie-stick-amateur.jpg"
                           width="39"
-                          height="43"/>
+                          height="43"
+                          alt="Любительская селфи-палка."/>
                         <h3 class="cart-product-title">
                           Любительская <br/>селфи-палка
                         </h3>
@@ -87,7 +89,7 @@
                           src="images/catalog/selfie-stick-pro.jpg"
                           width="39"
                           height="43"
-                          alt="Профессиональная селфи палка"/>
+                          alt="Профессиональная селфи-палка."/>
                         <h3 class="cart-product-title">
                           Профессиональная селфи-палка
                         </h3>
@@ -109,9 +111,7 @@
                       <span class="cart-amount">2000 ₽</span>
                     </div>
                   </div>
-                  <div class="open-cart-wrapper">
                     <a class="cart-open-link" href="#"><span class="cart-open-span">Открыть корзину</span></a>
-                  </div>
                 </div>
               </li>
             </ul>
@@ -181,7 +181,7 @@
                   <a
                     class="navigation-link opacity-type-interaction"
                     href="#warranty"
-                    >Грантия</a>
+                    >Гарантия</a>
                 </li>
                 <li class="navigation-item">
                   <a
@@ -215,10 +215,10 @@
               <li class="slider-item slider-item-active">
                 <img
                   class="slider-image"
-                  src="images\slider\copter.png"
+                  src="images/slider/copter.png"
                   width="560"
-                  height="560"
-                  alt="Квадрокоптер"/>
+                  height="520"
+                  alt="Квадрокоптер."/>
                 <div class="slider-card">
                   <span class="slider-number">01</span>
                   <h3 class="slider-title">
@@ -246,10 +246,10 @@
               <li class="slider-item">
                 <img
                   class="slider-image"
-                  src="images\slider\fitness-braclet.png"
+                  src="images/slider/fitness-braclet.png"
                   width="560"
-                  height="560"
-                  alt="Фитнес-браслет"
+                  height="520"
+                  alt="Фитнес-браслет."
                 />
                 <div class="slider-card">
                   <span class="slider-number">02</span>
@@ -271,9 +271,9 @@
               <li class="slider-item">
                 <img
                   class="slider-image"
-                  src="images\slider\selfie-stick.png"
+                  src="images/slider/selfie-stick.png"
                   width="560"
-                  height="560"
+                  height="520"
                   alt="Селфи-палка"/>
                 <div class="slider-card">
                   <span class="slider-number-3">03</span>
@@ -349,7 +349,7 @@
                     Моноподы для&nbsp;селфи</a>
                 </li>
                 <li class="product-categories-item">
-                  <a class="product-categories-link product-categories-link-cameras" href="catalog.html">Экшен камеры</a>
+                  <a class="product-categories-link product-categories-link-cameras" href="catalog.html">Экшн-камеры</a>
                 </li>
                 <li class="product-categories-item">
                   <a class="product-categories-link product-categories-link-fitness" href="catalog.html">Фитнес-браслеты</a>
@@ -365,7 +365,6 @@
           </section>
 
           <section class="services">
-            <div class="gray-background-services"></div>
             <div class="restricted-width-services">
               <h2 class="visually-hidden">Услуги</h2>
               <ul class="services-button-list">
@@ -373,7 +372,7 @@
                   <button class="link-button services-button services-button-current" type="button">Доставка</button>
                 </li>
                 <li class="services-button-item">
-                  <button class="link-button services-button yellow-rectangle-button-type" type="button">Грантия</button>
+                  <button class="link-button services-button yellow-rectangle-button-type" type="button">Гарантия</button>
                 </li>
                 <li class="services-button-item">
                   <button class="link-button services-button yellow-rectangle-button-type" type="button"> Кредит</button>
@@ -420,7 +419,7 @@
               </div>
             </div>
 
-            <dialog class="special-delivery-modal-window" open>
+            <dialog class="special-delivery-modal-window closed" open>
               <div class="dialog-row-wrapper">
                 <h2 class="special-delivery-title">Доставка под заказ</h2>
                 <button
@@ -497,9 +496,7 @@
                           name="amount-of-product"
                           value="1"
                           min="1"
-                          max="500"
-                          minlength="1"
-                          maxlength="3"/>
+                          max="500"/>
                         <button
                           class="plus-button opacity-type-interaction"
                           type="button">
@@ -517,14 +514,14 @@
             <section class="company-info">
               <h2 class="contacts-title">О нас</h2>
               <p class="description-text description-text-contacts">
-                Огромный выбор гаджетов не оставит равнодушным гика, который
+                Огромный выбор гаджетов не оставит равнодушным гика,&nbsp;который
                 есть в каждом из нас.
               </p>
-              <p class="description-text description-text-contacts">
+              <p class="description-text description-text-contacts margin-bottom-28">
                 Мы можем доставить ваш товар в самые отдалённые уголки России
                 транспортными компаниями:
               </p>
-              <ul class="delivery-companies-list description-text-contacts">
+              <ul class="delivery-companies-list description-text-contacts margin-bottom-32">
                 <li class="delivery-companies-item">Меловые линии</li>
                 <li class="delivery-companies-item">СДИК</li>
                 <li class="delivery-companies-item">ТоксБерри</li>
@@ -536,18 +533,18 @@
               <h2 class="contacts-title" id="contacts">Контакты</h2>
 
               <p class="description-text description-text-contacts">
-                Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
+                Вы можете забрать товар сами, заехав в наш офис. Заодно&nbsp;сможете
                 проверить работоспособность покупки.
               </p>
               <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
               <address class="contacts-address description-text-contacts">
-                <p class="description-text description-text-contacts">
+                <p class="description-text description-text-contacts margin-bottom">
                   Санкт-Петербург, набережная реки Карповки, 5, литера П.
                 </p>
                 <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
               </address>
               <h3 class="contacts-subtitle">Время работы</h3>
-              <ul class="contats-schedule description-text-contacts">
+              <ul class="contats-schedule description-text-contacts margin-bottom-35">
                 <li class="contacts-schedule-item">
                   <p class="description-text">пн—пт: с 10:00 до 22:00</p>
                 </li>
@@ -568,7 +565,7 @@
             <div class="subscription-area restricted-width">
               <div class="subscription-row-wrapper">
                 <h2 class="newsletter-call">Подпишитесь на рассылку</h2>
-                <p class="description-text description-text-subscription">
+                <p class="description-text description-text-subscription newsletter-txt">
                   Еженедельный дайджест с обзорами новинок,
                   длительными&nbsp;тест-драйвами, распаковками, а также акции,
                   спецпредложения и вот это вот всё.
@@ -607,7 +604,7 @@
               class="logo-link-footer opacity-type-interaction">
               <img
                 class="logo-footer"
-                src="images\footer\logo.svg"
+                src="images/footer/logo.svg"
                 width="145"
                 height="36"
                 alt="Логотип"/>
