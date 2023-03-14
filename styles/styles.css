@@ -215,6 +215,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+.cart-popover:focus-within {
+  display: block;
+}
+
+
 .cart-popover:before {
   content: "";
   display: block;
@@ -1249,10 +1254,10 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   content: "";
   width: 360px;
-  height: 380px;
+  height: 378px;
   background-color: rgba(240, 240, 240, 0.8);
   z-index: 3;
-  top: -15px;
+  top: -7px;
   left: 0;
   color: #000000;
   transform: translateY(-100%);
